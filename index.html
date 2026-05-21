@@ -1,31 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página</title>
+  <title>Apartamento Sol Madrid</title>
 
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <div class="card">
+  <header class="hero">
+    <div class="overlay"></div>
 
-    <img src="images/foto.jpg" alt="Mi imagen">
-
-    <div class="content">
-      <h1>Complejo turistico de Daniel Efe</h1>
+    <div class="hero-content">
+      <h1>Apartamento Sol Madrid</h1>
 
       <p>
-        Esta página está alojada gratis usando GitHub Pages.
+        Apartamento moderno y acogedor en el centro de Madrid.
+        Ideal para parejas, familias o viajes de trabajo.
+      </p>
 
-        Hola k pasa Danieeeeelllllll
+      <a href="https://wa.me/34600111222" class="button">
+        Contactar por WhatsApp
+      </a>
+    </div>
+  </header>
+
+
+  <section class="container">
+
+    <div class="section-title">
+      <h2>Galería</h2>
+      <p>Imágenes del apartamento</p>
+    </div>
+
+    <div class="gallery">
+      <img src="images/foto1.jpg" alt="Foto apartamento 1">
+      <img src="images/foto2.jpg" alt="Foto apartamento 2">
+      <img src="images/foto3.jpg" alt="Foto apartamento 3">
+      <img src="images/foto4.jpg" alt="Foto apartamento 4">
+      <img src="images/foto5.jpg" alt="Foto apartamento 5">
+    </div>
+  </section>
+
+
+  <section class="container info-grid">
+
+    <div class="card">
+      <h3>Información del apartamento</h3>
+
+      <ul>
+        <li>👥 Capacidad: 4 personas</li>
+        <li>🛏️ 2 habitaciones</li>
+        <li>🛁 1 baño completo</li>
+        <li>📶 WiFi de alta velocidad</li>
+        <li>❄️ Aire acondicionado</li>
+        <li>🍳 Cocina equipada</li>
+      </ul>
+    </div>
+
+
+    <div class="card">
+      <h3>WiFi</h3>
+
+      <p><strong>Red:</strong> APARTAMENTO_SOL_5G</p>
+      <p><strong>Contraseña:</strong> vacaciones2026</p>
+
+      <button onclick="copyWifi()" class="secondary-button">
+        Copiar contraseña
+      </button>
+    </div>
+
+
+    <div class="card">
+      <h3>Dirección</h3>
+
+      <p>
+        Calle Gran Vía 25<br>
+        28013 Madrid, España
+      </p>
+
+      <p>
+        📍 GPS: 40.42005, -3.70577
+      </p>
+
+      <a
+        href="https://maps.google.com/?q=40.42005,-3.70577"
+        target="_blank"
+        class="secondary-button link-button"
+      >
+        Abrir en Google Maps
+      </a>
+    </div>
+
+
+    <div class="card">
+      <h3>Cómo llegar desde el aeropuerto</h3>
+
+      <p>
+        ✈️ Desde el Aeropuerto Adolfo Suárez Madrid-Barajas:
+      </p>
+
+      <ul>
+        <li>🚇 Metro línea 8 hasta Nuevos Ministerios</li>
+        <li>🚇 Cambiar a línea 10</li>
+        <li>🚇 Bajarse en Tribunal</li>
+        <li>🚶 8 minutos caminando</li>
+      </ul>
+
+      <p>
+        Tiempo aproximado: 40 minutos.
       </p>
     </div>
 
-  </div>
+
+    <div class="card">
+      <h3>Recomendaciones</h3>
+
+      <ul>
+        <li>🍷 Mercado de San Miguel</li>
+        <li>🌳 Parque del Retiro</li>
+        <li>🖼️ Museo del Prado</li>
+        <li>🍽️ Restaurante Casa Lucio</li>
+        <li>☕ Cafetería HanSo Café</li>
+      </ul>
+    </div>
+
+
+    <div class="card">
+      <h3>Check-in / Check-out</h3>
+
+      <p><strong>Check-in:</strong> desde las 15:00</p>
+      <p><strong>Check-out:</strong> hasta las 11:00</p>
+
+      <p>
+        Para llegadas tardías, contactar por WhatsApp.
+      </p>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <p>
+      © 2026 Apartamento Sol Madrid
+    </p>
+  </footer>
+
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
